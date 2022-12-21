@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FF4B3A">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="161dp"
+        android:hint="Friend Rice"
+        android:textColorHint="@color/black"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_search_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="59dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/black"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout"
+        app:icon="@drawable/ic_baseline_filter_alt_24"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#00000000"
+        android:text="Rescued"
+        app:cornerRadius="30dp"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:backgroundTint="#00000000"
+        android:text="Vegan"
+        app:cornerRadius="30dp"
+        app:layout_constraintStart_toEndOf="@+id/materialButton3"
+        app:layout_constraintTop_toTopOf="@+id/materialButton3"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:backgroundTint="#00000000"
+        android:text="Delivery"
+        app:cornerRadius="30dp"
+        app:layout_constraintStart_toEndOf="@+id/materialButton"
+        app:layout_constraintTop_toTopOf="@+id/materialButton"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        android:layout_marginHorizontal="10dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="414dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/backgr"
+        android:weightSum="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton"
+        app:layout_constraintVertical_bias="0.497"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            style="@style/background"
+            app:cardCornerRadius="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/friedchick"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rescued"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESCUED"
+                android:textColor="@color/white"
+                android:layout_marginTop="33dp"
+                android:layout_marginLeft="13dp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fiftyoff"
+                android:layout_marginTop="70dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50% OFF"
+                android:textColor="@color/white"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suhani Restuarant"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="120dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chinnese North Indian"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="105dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Left over food and supplies are geathered and sold for 50% off"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹100"
+                android:textSize="22sp"
+                android:textColor="#F88922"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="75dp"
+                android:layout_marginStart="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(200)"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="80dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   30 min   "
+                android:background="@drawable/wordback"
+                android:layout_marginTop="110dp"
+                android:layout_marginStart="10dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="62dp"
+                android:layout_height="38dp"
+                android:backgroundTint="#509807"
+                android:text="4.5"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:cornerRadius="30dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="115dp"
+                android:layout_marginEnd="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="145 cal"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="70dp"
+                android:layout_marginEnd="30dp"/>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            style="@style/background"
+            app:cardCornerRadius="20dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/food" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suhani Restuarant"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="120dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rescued"
+                android:layout_marginTop="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESCUED"
+                android:textColor="@color/white"
+                android:layout_marginTop="33dp"
+                android:layout_marginLeft="13dp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fiftyoff"
+                android:layout_marginTop="70dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50% OFF"
+                android:textColor="@color/white"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="5dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chinnese North Indian"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="105dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Left over food and supplies are geathered and sold for 50% off"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹100"
+                android:textSize="22sp"
+                android:textColor="#F88922"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="75dp"
+                android:layout_marginStart="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(200)"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="80dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   30 min   "
+                android:background="@drawable/wordback"
+                android:layout_marginTop="110dp"
+                android:layout_marginStart="10dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="62dp"
+                android:layout_height="38dp"
+                android:backgroundTint="#509807"
+                android:text="4.5"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:cornerRadius="30dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="115dp"
+                android:layout_marginEnd="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="145 cal"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="70dp"
+                android:layout_marginEnd="30dp"/>
+        </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="680dp"
+        android:background="@color/white"
+        android:gravity="bottom"
+        app:layout_constraintTop_toTopOf="parent" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_baseline_circle_24"
+            android:layout_marginHorizontal="30dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/ic_baseline_star_outline_24"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/ic_baseline_sports_baseball_24"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/ic_baseline_person_24"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>
